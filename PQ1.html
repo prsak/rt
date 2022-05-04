@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practical Q1</title>
+    </head>
+    <style>
+        body{
+            background-color: rgb(166, 114, 250);
+            text-align: center;
+        }
+        h2{
+            color: rgb(97, 0, 0);
+            font-size: 50px;
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        label{
+            color: rgb(104, 0, 0);
+            font-size: 20px;
+            font-family: 'Source Sans Pro', sans-serif;
+            text-align: center;
+        }
+        input,select,textarea{
+            background-color: rgb(136, 230, 143);
+            color: rgb(75, 0, 52);
+        }
+    </style>
+    
+    <body>
+        <h2>FILL YOUR PERSONAL DETAILS</h2>
+        <form >
+            <label for="firstname"> First Name: 
+            <input type="text" name="firstname" maxlength="200" id="firstname">
+            </label>
+            <br> <br>
+
+            <label for="lastname"> Last Name:
+            <input type="text" name="lastname" maxlength="200" id="lastname">
+            </label>
+            <br><br>
+
+            <label for="gender">
+                Gender :<br>
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="male"> 
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" > 
+            </label>
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id=dob>
+            <br><br>
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="nepal">Nepal</option>
+                <option value="srilanka">Sri Lanka</option>
+                <option value="other">Other</option>
+            </select>
+            <br><br>
+
+            <label for="email">Email Id</label>
+            <input type="email" name="email" id="email">
+            <br><br>
+
+            <label for="contact">Contact no.</label>
+            <input type="tel" name="contact" id="contact" maxlength="10"  pattern="[0-9]{10}">
+            <br><br>
+
+            <label for="oinfo">Other Information You want to Provide</label> <br>
+            <textarea cols="50" rows="10" name="oinfo" id="oinfo" ></textarea>
+            <br><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" required>
+            <label for="vehicle1"> I declare all information provided is correct.</label><br>
+            
+            
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+            
+        </form>
+
+    </body>
+</html>

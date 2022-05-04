@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+   <title>Article Info</title>
+   <style>
+       body{
+           background-color: rgb(218, 255, 197);
+       }
+      
+       form,h1{
+           font-family: 'Trebuchet MS';
+           color: rgb(24, 83, 22);
+       }
+       form{
+           padding-left: 10%;
+       }
+       h1{
+           font-size: 300%;
+           text-align: center;
+       }
+   </style>
+</head>
+<body>
+   <h1>Information of an Article </h1>
+<form name="Information of an Article">
+   <label for="artcl">Name of Article :</label>
+   <input type="text" name="artcl" required>
+   <br><br>
+   <label for="fp">File path :</label>
+   <input type="file" name="fp" required>
+   <br><br>
+   <label for="autnam">Author Name :</label>
+   <input type="text" name="autnam" >
+   <br><br>
+   <label for="ftyp">Type :</label>
+   <input type="radio" value="technical" name="ftyp">Technical
+   <input type="radio" value="literature" name="ftyp">Literature
+   <input type="radio" value="general" name="ftyp">General
+   <br><br>
+   <label for="subtop">Subject Topic :</label>
+   <select name="subtop">
+       <option value="0"> --Select----- </option>
+       <option value="Hi"> History </option>
+       <option value="Po"> Polity </option>
+       <option value="Cu"> Currrent affairs </option>
+       <option value="Ge"> Geography </option>
+       <option value="Te"> Technology </option>
+       <option value="Mi"> Miscellaneous </option>
+   </select>
+   <br><br>
+   <input type="Submit"> &nbsp;<input type="Reset">
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <title>Departmental store form</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        h1{
+            font-size: 300%;
+            text-align: center;
+            font-family: 'Lucida Sans';
+            color: rgba(1, 70, 58, 0.733);
+        }
+        form{
+            font-size: 22px;
+            margin-left: 40px;
+            font-family: 'Lucida Sans';
+            color: rgba(1, 70, 58, 0.733);
+        }
+        .btn{
+            background-color: beige;
+            border: 2px solid rgba(1, 70, 58, 0.733);
+            font-size: 30px;
+            color: rgba(1, 70, 58, 0.733);
+        }
+        .btn:hover{
+            background-color: white;
+        }
+    </style>
+<body>
+    <h1>DEPARTMENTAL STORE FORM</h1>
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" id="fname"></br></br>
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname"></br></br>
+        <label for="phone">Mobile number:</label>
+        <input type="tel" id="phone" name="phone"></br></br>
+        <label for="pday_list">Preferred day of purchasing :</label>
+        <select id="pday_list">
+            <option value="" disabled selected hidden> none</option>
+            <option value="Mo">Monday</option>
+            <option value="tu">tuesday</option>
+            <option value="we">wednesday</option>
+            <option value="th">thursday</option>
+            <option value="fr">friday</option>
+            <option value="sa">saturday</option>
+            <option value="su">sunday</option>
+        </select></br></br>
+        <label for="fav_itm">Favorite item</label>
+        <select id="fav_itm_list">
+            <option value="1">Snacks</option>
+            <option value="2">Perfumes</option>
+            <option value="3">Detergents</option>
+            <option value="4">Fruits/Vegetables</option>
+            <option value="5">preserved food</option>
+        </select></br></br>
+        <label for="msg">Suggestions : </label></br>
+        <textarea cols="60" rows="6" id="mssg_b" placeholder="Write Your Suggestions Here"></textarea></br></br>
+        <input type="reset" class="btn" value="Reset">
+        <input type="submit" class="btn"  value="Submit">
+    </form>
+    </p>
+</body>
+
+</html>
